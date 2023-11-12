@@ -18,15 +18,22 @@
     <body>
         <header class="primary-header">
             <div class="container">
+                <div class="nav-wrapper">
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                    <img class="icon-hamburger" src="pictures/menu-icon.svg" alt="" aria-hidden="true">
+                    <img class="icon-close" src="pictures/close-icon.svg" alt="" aria-hidden="true">
+                    <span class="sr-only">Menu</span>
+                </button>
                 <nav class="primary-navigation">
-                    <ul aria-label="navigation" role="list" class="nav-list">
+                    <ul aria-label="navigation" role="list" class="nav-list" id="primary-navigation"> 
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Photography</a></li>
                     </ul>
                 </nav>
-                <button class="button">Download CV</button>
+                <button class="button" style="display: none">Download CV</button>
+                </div>
             </div>
         </header>
         <main>

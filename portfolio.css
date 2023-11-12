@@ -113,6 +113,18 @@ svg {
 
 /*Utility classes*/
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .text-primary-400{
   color: var(--clr-primary-900);
 }
@@ -160,7 +172,7 @@ svg {
   }
 }
 
-/*General styling*/
+/*Body*/
 
 body{
   font-size: var(--fs-body);
@@ -171,18 +183,59 @@ body{
 /*Button*/
 
 .button{
+  display: inline-flex;
+  cursor: pointer;
   border: 0;
   text-decoration: none;
   border-radius: 100vmax;
   padding: 1em 2.5em;
   font-weight: var(--fw-regular);
   font-size: var(--fs-300);
+  line-height: 1;
 }
 
 .button:hover,
 .button:focus-visible{
   background-color: aqua;
 }
+
+/*Navigation*/
+
+.primary-header{
+  padding-top: var(--size-700);
+}
+
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .primary-navigation{
+    display: none;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+  
+  .mobile-nav-toggle 
+  .icon-close{
+    display: none;
+  }
+}
+
+
+/*General styling*/
 
 .social-media-list{
   list-style: none;
@@ -192,4 +245,9 @@ body{
 .profile-picture img{
   width: 519px;
   border-radius: 50%;
+}
+
+.icon-hamburger,
+.icon-close{
+  width: 50px;
 }
