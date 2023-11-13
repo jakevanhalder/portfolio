@@ -226,14 +226,28 @@ body{
     background: transparent;
     border: 0;
     padding: 0.5em;
+    
   }
   
   .mobile-nav-toggle 
   .icon-close{
     display: none;
   }
+
+  .nav-wrapper{
+    justify-content: end;
+  }
+
+  .icon-hamburger,
+  .icon-close{
+    width: 50px;
+  }
 }
 
+.opened{
+  display: block;
+  position: fixed;
+}
 
 /*General styling*/
 
@@ -247,7 +261,3 @@ body{
   border-radius: 50%;
 }
 
-.icon-hamburger,
-.icon-close{
-  width: 50px;
-}
