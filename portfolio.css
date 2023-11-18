@@ -1,6 +1,8 @@
 :root {
   /*Website colors*/
   --clr-primary-100: #fff;
+  --clr-primary-400: #00ffff;
+  --clr-primary-800: #aaa;
   --clr-primary-900: #000;
 
   /*Fonts*/
@@ -111,6 +113,146 @@ svg {
   }
 }
 
+/*Body*/
+
+body{
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-900);
+}
+
+/*Button*/
+
+.button{
+  display: inline-flex;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  border-radius: 100vmax;
+  padding: 1em 2.5em;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-300);
+  line-height: 1;
+}
+
+.button:hover,
+.button:focus-visible{
+  background-color: var(--clr-primary-400);
+}
+
+/*Navigation*/
+
+.primary-header{
+  padding-top: var(--size-500);
+}
+
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+.nav-list{
+  font-size: var(--fs-nav);
+}
+
+.nav-list{
+  display: flex;
+  gap: clamp(var(--size-500), 5vw, var(--size-800));
+  font-weight: var(--fw-regular);
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: var(--clr-primary-900);
+}
+
+.nav-list a:hover,
+.nav-list a:focus{
+  color: var(--clr-primary-400);
+}
+
+@media (max-width: 50em) {
+  .primary-navigation{
+    display: none;
+
+    position: fixed;
+    padding: var(--size-700);
+    inset: 8rem var(--size-400) auto;
+    max-width: 25rem;
+    margin-inline: auto;
+    background-color: var(--clr-primary-100);
+    border-radius: var(--size-100);
+    box-shadow: 0 0 .75em rgb(0, 0, 0.05);
+  }
+
+  .primary-header[data-overlay]::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+  }
+
+  .nav-list{
+    display: grid;
+    gap: var(--size-600);
+    text-align: center;
+    font-weight: var(--fw-regular);
+  }
+
+  .primary-navigation[data-visible]{
+    display: grid;
+    position: absolute;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    position: fixed;
+    top: var(--size-600);
+    right: var(--size-400);
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+    
+  }
+  
+  .mobile-nav-toggle 
+  .icon-close{
+    display: none;
+  }
+
+  .nav-wrapper{
+    justify-content: end;
+  }
+
+  .icon-hamburger,
+  .icon-close{
+    width: 50px;
+  }
+}
+
+.opened{
+  display: block;
+  position: fixed;
+}
+
+/*General styling*/
+
+.social-media-list{
+  list-style: none;
+  width: 30px;
+}
+
+.profile-picture img{
+  width: 519px;
+  border-radius: 50%;
+}
+
 /*Utility classes*/
 
 .sr-only{
@@ -152,6 +294,17 @@ svg {
   padding-block: var(--size-900);
 }
 
+.display-sm-none{
+  display: none;
+}
+
+@media (min-width: 50em){
+
+  .display-md-inline-flex{
+    display: inline-flex;
+  }
+}
+
 .container{
   --max-width: 1213px;
   --padding: 1rem;
@@ -171,93 +324,3 @@ svg {
     grid-auto-columns: 1fr;
   }
 }
-
-/*Body*/
-
-body{
-  font-size: var(--fs-body);
-  font-family: var(--ff-body);
-  color: var(--clr-primary-900);
-}
-
-/*Button*/
-
-.button{
-  display: inline-flex;
-  cursor: pointer;
-  border: 0;
-  text-decoration: none;
-  border-radius: 100vmax;
-  padding: 1em 2.5em;
-  font-weight: var(--fw-regular);
-  font-size: var(--fs-300);
-  line-height: 1;
-}
-
-.button:hover,
-.button:focus-visible{
-  background-color: aqua;
-}
-
-/*Navigation*/
-
-.primary-header{
-  padding-top: var(--size-700);
-}
-
-.nav-wrapper{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mobile-nav-toggle{
-  display: none;
-}
-
-@media (max-width: 50em) {
-  .primary-navigation{
-    display: none;
-  }
-
-  .mobile-nav-toggle{
-    display: block;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    padding: 0.5em;
-    
-  }
-  
-  .mobile-nav-toggle 
-  .icon-close{
-    display: none;
-  }
-
-  .nav-wrapper{
-    justify-content: end;
-  }
-
-  .icon-hamburger,
-  .icon-close{
-    width: 50px;
-  }
-}
-
-.opened{
-  display: block;
-  position: fixed;
-}
-
-/*General styling*/
-
-.social-media-list{
-  list-style: none;
-  width: 30px;
-}
-
-.profile-picture img{
-  width: 519px;
-  border-radius: 50%;
-}
-
