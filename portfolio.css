@@ -35,9 +35,9 @@
 
 @media (min-width: 50em) {
   :root {
-    --fs-500: 6.25rem;
-    --fs-400: 2.1875rem;
-    --fs-300: 1.125rem;
+    --fs-500: 4.25rem;
+    --fs-400: 1.1875rem;
+    --fs-300: 0.825rem;
 
     --fs-body: var(--fs-400);
     --fs-primary-heading: var(--fs-500);
@@ -260,6 +260,7 @@ body{
   width: 30px;
   display: inline-block;
   margin-right: 15px;
+  margin-top: 15px;
 }
 
 /*Profile Picture*/
@@ -282,13 +283,6 @@ body{
 .even-columns{
   display: grid;
   gap: 1rem;
-}
-
-@media (min-width: 50em) {
-  .even-columns{
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
 }
 
 .sr-only{
@@ -330,6 +324,17 @@ body{
   padding-block: var(--size-900);
 }
 
+@media (max-width: 50em) {
+  
+  .sm-sc-center{
+    text-align: center;
+  }
+
+  .sm-sc-center img{
+    display: inline-block;
+  }
+}
+
 .display-sm-none{
   display: none;
 }
@@ -340,3 +345,4 @@ body{
     display: inline-flex;
   }
 }
+
