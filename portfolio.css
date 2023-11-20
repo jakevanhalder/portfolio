@@ -33,10 +33,10 @@
   --size-900: 5rem;
 }
 
-@media (min-width: 50em) {
+@media (max-width: 50em) {
   :root {
-    --fs-500: 4.25rem;
-    --fs-400: 1.1875rem;
+    --fs-500: 3.25rem;
+    --fs-400: 1rem;
     --fs-300: 0.825rem;
 
     --fs-body: var(--fs-400);
@@ -283,6 +283,13 @@ body{
 .even-columns{
   display: grid;
   gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 .sr-only{
