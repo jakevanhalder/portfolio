@@ -250,12 +250,19 @@ body{
   position: fixed;
 }
 
-/*General styling*/
+/*Social media list*/
 
-.social-media-list{
+.social-media-list ul{
   list-style: none;
-  width: 30px;
 }
+
+.social-media-list li{ 
+  width: 30px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/*Profile Picture*/
 
 .profile-picture img{
   width: 519px;
