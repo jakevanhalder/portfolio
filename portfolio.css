@@ -185,7 +185,7 @@ body{
 
   .primary-navigation{
     display: none;
-    position: fixed;
+    position: absolute;
     padding: var(--size-700);
     inset: 8rem var(--size-400) auto;
     max-width: 25rem;
@@ -215,8 +215,8 @@ body{
 
   .mobile-nav-toggle{
     display: block;
-    position: fixed;
-    top: var(--size-600);
+    position: absolute;
+    top: var(--size-700);
     right: var(--size-400);
     cursor: pointer;
     background: transparent;
