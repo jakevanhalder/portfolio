@@ -263,6 +263,22 @@ body{
   margin-top: 15px;
 }
 
+/*Projects list*/
+
+.project-list ul{
+  list-style: none;
+}
+
+.project-list li{
+  width: auto;
+  height: auto;
+}
+
+.project-list{
+  display: grid; 
+  grid: auto-flow dense / 40px 40px 1fr;
+}
+
 /*Profile Picture*/
 
 .profile-picture img{
