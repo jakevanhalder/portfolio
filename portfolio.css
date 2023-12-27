@@ -140,6 +140,10 @@ body{
   background-color: var(--clr-primary-400);
 }
 
+.button[data-type="showcase-block"]
+{
+  background-color: var(--clr-primary-400);
+}
 /*Navigation*/
 
 .primary-header{
@@ -263,22 +267,6 @@ body{
   margin-top: 15px;
 }
 
-/*Projects list*/
-
-.project-list ul{
-  list-style: none;
-}
-
-.project-list li{
-  width: auto;
-  height: auto;
-}
-
-.project-list{
-  display: grid; 
-  grid: auto-flow dense / 40px 40px 1fr;
-}
-
 /*Profile Picture*/
 
 .profile-picture img{
@@ -299,6 +287,19 @@ body{
 .even-columns{
   display: grid;
   gap: 1rem;
+}
+
+.project-list ul{
+  list-style: none;
+}
+
+.project-list a{
+  text-decoration: none;
+}
+
+.showcase-block{
+  background-color: #00ffff;
+  
 }
 
 @media (min-width: 50em) {
