@@ -143,7 +143,15 @@ body{
 .button[data-type="showcase-block"]
 {
   background-color: var(--clr-primary-400);
+  font-size: var(--fs-body);
+  margin: 5px;
 }
+
+.button[data-type="showcase-block"]:hover
+{
+  background-color: #aaa;
+}
+
 /*Navigation*/
 
 .primary-header{
