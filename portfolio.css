@@ -175,6 +175,10 @@ body{
   object-fit: cover;
 }
 
+.content-spacing img, p{
+  margin-bottom: 20px;
+}
+
 /*Button*/
 
 .button{
