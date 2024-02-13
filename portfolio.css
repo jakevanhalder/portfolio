@@ -141,6 +141,18 @@ body{
   margin: 1rem;
 }
 
+.photo-container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 @media(min-width: 500px){
   .photo-grid{
       grid-template-columns: repeat(2, 1fr);
