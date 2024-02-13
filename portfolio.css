@@ -144,7 +144,8 @@ body{
 .photo-container{
   position: relative;
   text-align: center;
-  color: white;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .bottom-left{
@@ -153,7 +154,15 @@ body{
   left: 16px;
 }
 
+@media (max-width: 800px){
+  
+  .photo-grid > div:hover{
+    transform: none;
+  }
+}
+
 @media(min-width: 500px){
+  
   .photo-grid{
       grid-template-columns: repeat(2, 1fr);
   }
