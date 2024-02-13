@@ -123,6 +123,41 @@ body{
   color: var(--clr-primary-900);
 }
 
+/*Photography*/
+
+.photo-grid > div{
+  --transistion: all 300ms ease-in-out;
+  transition: var(--transistion);
+}
+
+.photo-grid > div:hover{
+  transform: scale(0.9);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+@media(min-width: 500px){
+  .photo-grid{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-grid img{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media(min-width: 800px){
+  .photo-grid{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /*Projects*/
 
 .projects{
