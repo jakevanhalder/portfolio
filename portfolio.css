@@ -466,8 +466,12 @@ body{
   .sm-sc-center{
     text-align: center;
   }
+  
+  .sm-sc-left{
+    text-align: left;
+  }
 
-  .sm-sc-center img{
+  .sm-sc-left img{
     display: inline-block;
   }
 }
