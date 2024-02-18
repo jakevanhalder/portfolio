@@ -236,6 +236,16 @@ body{
   margin-bottom: 20px;
 }
 
+.project-date{
+  text-align: left;
+}
+
+@media (max-width: 600px){
+  .project-date{
+    text-align: center;
+  }
+}
+
 /*Button*/
 
 .button{
