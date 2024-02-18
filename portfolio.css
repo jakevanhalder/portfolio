@@ -193,6 +193,7 @@ body{
   margin: 1.5rem;
   display: grid;
   background-color: var(--clr-primary-400);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
   overflow: hidden;
   line-height: 1.7;
