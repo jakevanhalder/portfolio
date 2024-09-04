@@ -1,9 +1,9 @@
 :root {
   /*Website colors*/
-  --clr-primary-100: #fff;
+  --clr-primary-100: #F2F2F2;
   --clr-primary-400: #00ffff;
   --clr-primary-800: #aaa;
-  --clr-primary-900: #000;
+  --clr-primary-900: #0D0D0D;
 
   /*Fonts*/
   --ff-primary: 'Inter', sans-serif;
@@ -32,6 +32,14 @@
   --size-700: 3rem;
   --size-800: 4rem;
   --size-900: 5rem;
+}
+
+.darkmode {
+  /*Website colors*/
+  --clr-primary-100: #0D0D0D;
+  --clr-primary-400: #262626;
+  --clr-primary-800: #8C8C8C;
+  --clr-primary-900: #F2F2F2;
 }
 
 @media (max-width: 50em) {
@@ -121,6 +129,7 @@ body{
   font-size: var(--fs-body);
   font-family: var(--ff-body);
   color: var(--clr-primary-900);
+  background-color: var(--clr-primary-100);
 }
 
 /*Photography*/
@@ -258,6 +267,8 @@ body{
   font-weight: var(--fw-regular);
   font-size: var(--fs-300);
   line-height: 1;
+  background-color: #F2F2F2;
+  outline: 2px solid var(--clr-primary-900);
 }
 
 .button:hover,
@@ -394,10 +405,13 @@ body{
 }
 
 .social-media-list li{ 
-  width: 30px;
+  width: 50px;
   display: inline-block;
   margin-right: 15px;
   margin-top: 15px;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 /*Profile Picture*/
