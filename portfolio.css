@@ -398,6 +398,30 @@ body{
   position: fixed;
 }
 
+/*Settings*/
+.website-settings-toggle{
+  display: block;
+  top: var(--size-700);
+  right: var(--size-400);
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0.5em;
+  width: 1.75em;
+  aspect-ratio: 1;
+
+  background-image: url("pictures/settings-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+
+.website-settings-toggle[aria-expanded="true"]{
+  background-image: url("pictures/settings-filled.svg");
+}
+
 /*Social media list*/
 
 .social-media-list ul{

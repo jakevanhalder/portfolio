@@ -10,6 +10,7 @@ navToggle.addEventListener('click', () => {
     primaryHeader.toggleAttribute("data-overlay");
 })
 
+
 /**
  * jQuery segment of code that handles making the photographs zoom in function
  * This code was obtained from https://stackoverflow.com/a/50430187
