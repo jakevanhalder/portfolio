@@ -1,7 +1,7 @@
 :root {
   /*Website colors*/
   --clr-primary-100: #F2F2F2;
-  --clr-primary-400: #00ffff;
+  --clr-primary-400: #c5b7e4;
   --clr-primary-800: #aaa;
   --clr-primary-900: #0D0D0D;
 
@@ -399,28 +399,57 @@ body{
 }
 
 /*Settings*/
-.website-settings-toggle{
-  display: block;
-  top: var(--size-700);
-  right: var(--size-400);
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  padding: 0.5em;
-  width: 1.75em;
-  aspect-ratio: 1;
 
-  background-image: url("pictures/settings-outline.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
+  .settings{
+    display: none;
+    position: absolute;
+    padding: var(--size-700);
+    top: 5.25rem;
+    right: 6rem;
+    max-width: 20rem;
+    margin-inline: auto;
+    background-color: var(--clr-primary-100);
+    border-radius: var(--size-100);
+    box-shadow: 0 0 .75em rgb(0, 0, 0.05);
+  }
+
+  .settings[data-visible]{
+    display: grid;
+  }
+
+  .settings-list{
+    display: grid;
+    gap: var(--size-600);
+    text-align: center;
+    font-weight: var(--fw-regular);
+  }
+
+  .website-settings-toggle{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+    width: 1.75em;
+    aspect-ratio: 1;
   
-}
+    background-image: url("pictures/settings-outline.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .website-settings-toggle[aria-expanded="true"]{
+    background-image: url("pictures/settings-filled.svg");
+  }
 
-.website-settings-toggle[aria-expanded="true"]{
-  background-image: url("pictures/settings-filled.svg");
-}
+  .icon-outline,
+  .icon-fill{
+    width: 50px;
+  }
+
 
 /*Social media list*/
 
@@ -514,6 +543,12 @@ body{
   
   .sm-sc-center{
     text-align: center;
+  }
+
+  .sm-sc-center img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .sm-sc-left{

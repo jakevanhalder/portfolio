@@ -2,13 +2,28 @@ const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
 
-navToggle.addEventListener('click', () => {
-    primaryNav.hasAttribute('data-visible') 
-    ? navToggle.setAttribute('aria-expanded', false)
-    : navToggle.setAttribute('aria-expanded', true)
-    primaryNav.toggleAttribute("data-visible");
+if (navToggle && primaryNav && primaryHeader) {
+  navToggle.addEventListener('click', () => {
+      primaryNav.hasAttribute('data-visible') 
+      ? navToggle.setAttribute('aria-expanded', false)
+      : navToggle.setAttribute('aria-expanded', true)
+      primaryNav.toggleAttribute("data-visible");
+      primaryHeader.toggleAttribute("data-overlay");
+  });
+}
+
+const settingsToggle = document.querySelector(".website-settings-toggle");
+const settings = document.querySelector(".settings");
+
+if (settingsToggle && settings && primaryHeader) {
+  settingsToggle.addEventListener('click', () => {
+    settings.hasAttribute('data-visible')
+    ? settingsToggle.setAttribute('aria-expanded', false)
+    : settingsToggle.setAttribute('aria-expanded', true)
+    settings.toggleAttribute("data-visible");
     primaryHeader.toggleAttribute("data-overlay");
-})
+  });
+}
 
 
 /**
