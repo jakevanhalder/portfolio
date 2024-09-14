@@ -2,6 +2,7 @@ const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
 
+// Deals with the mobile nav toggle
 if (navToggle && primaryNav && primaryHeader) {
   navToggle.addEventListener('click', () => {
       primaryNav.hasAttribute('data-visible') 
@@ -12,6 +13,7 @@ if (navToggle && primaryNav && primaryHeader) {
   });
 }
 
+// Deals with the settings toggle
 const settingsToggle = document.querySelector(".website-settings-toggle");
 const settings = document.querySelector(".settings");
 
@@ -25,6 +27,61 @@ if (settingsToggle && settings && primaryHeader) {
   });
 }
 
+// Deals with the darkmode toggle
+let darkMode = localStorage.getItem('darkmode');
+const themeSwitch = document.getElementById('theme-switch');
+const checkBox = document.getElementById('checkboxToggle');
+
+const enableDarkmode = () => {
+  document.body.classList.add('darkmode');
+  localStorage.setItem('darkmode', 'active');
+}
+
+const disableDarkmode = () => {
+  document.body.classList.remove('darkmode');
+  localStorage.setItem('darkmode', null);
+}
+
+if(darkMode === "active") enableDarkmode()
+
+function myFunction(){
+  themeSwitch.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkmode')
+    darkMode !== "active"
+    ? enableDarkmode()
+    : disableDarkmode()
+  });
+}
+
+// The following code was obtained from https://stackoverflow.com/a/76801544
+
+// Function to save checkbox states to Local Storage
+function saveCheckboxStates() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => {
+    localStorage.setItem(checkbox.id, checkbox.checked);
+  });
+}
+
+// Function to load checkbox states from Local Storage
+function loadCheckboxStates() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => {
+    const savedState = localStorage.getItem(checkbox.id);
+    if (savedState !== null) {
+      checkbox.checked = savedState === 'true';
+    }
+  });
+}
+
+// Attach event listener to the checkboxes to save their states
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('change', saveCheckboxStates);
+});
+
+// Load checkbox states on page load
+document.addEventListener('DOMContentLoaded', loadCheckboxStates);
 
 /**
  * jQuery segment of code that handles making the photographs zoom in function

@@ -52,9 +52,15 @@
                         </button>
                         <div class="settings display-sm-none" id="settings">
                             <ul aria-label="Website settings list" role="list" class="settings-list">
-                                <li>Work in progress</li>
-                                <li>Change website language</li>
-                                <li>Darkmode</li>
+                                <li>Work in progress</li>                                
+                                <div class="even-columns">
+                                    <li>Darkmode</li>
+                                    <label class="switch" id="theme-switch">
+                                        <input type="checkbox" onclick="myFunction()" id="checkboxToggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div> 
+                                <li>Change website language</li>                               
                             </ul>
                         </div>
                     </div>              
