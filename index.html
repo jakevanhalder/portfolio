@@ -1,94 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jake van Halder</title>
+<html lang="en">
 
-        <!--css-->
-        <link rel="stylesheet" href="portfolio.css">
+<head>
+    <title>Jake van Halder</title>
 
-        <!-- Add jQuery from a CDN -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="portfolio.css">
 
-        <!--JavaScript-->
-        <script src="script.js" defer></script>
+    <!-- Add jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!--font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--JavaScript-->
+    <script src="script.js" defer></script>
 
-        <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
-        <link rel="manifest" href="pictures/favicons/site.webmanifest">
-        <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-        <!--meta tags-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header class="primary-header">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <button 
-                        class="mobile-nav-toggle" 
-                        aria-controls="primary-navigation" 
-                        aria-expanded="false"
-                        aria-label="Open main navigation menu"
-                    >
-                        <span class="sr-only">Menu</span>
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
+    <link rel="manifest" href="pictures/favicons/site.webmanifest">
+    <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+                    aria-label="Open main navigation menu">
+                    <span class="sr-only">Menu</span>
+                </button>
+                <nav class="primary-navigation" id="primary-navigation">
+                    <ul aria-label="navigation" role="list" class="nav-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./photography.html">Photography</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a
+                            href="pictures/resume.pdf" style="text-decoration: none; color: black;"
+                            download="Jake Johannes Halili van Halder resume">Download CV</a></button>
+                    <button class="website-settings-toggle display-md-inline-flex display-sm-none"
+                        style="margin-left: 10px;" aria-controls="settings" aria-expanded="false"
+                        aria-label="Open website settings">
+                        <span class="sr-only">Settings</span>
                     </button>
-                    <nav class="primary-navigation" id="primary-navigation">
-                        <ul aria-label="navigation" role="list" class="nav-list"> 
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./projects.html">Projects</a></li>
-                            <li><a href="./photography.html">Photography</a></li>
+                    <div class="settings display-sm-none" id="settings">
+                        <ul aria-label="Website settings list" role="list" class="settings-list">
+                            <li>Work in progress</li>
+                            <div class="even-columns">
+                                <li>Darkmode</li>
+                                <label class="switch" id="theme-switch">
+                                    <input type="checkbox" onclick="myFunction()" id="checkboxToggle"
+                                        aria-label="Toggle dark mode">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <li>Change website language</li>
                         </ul>
-                    </nav>
-                    <div>
-                        <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a href="pictures/resume.pdf" style="text-decoration: none; color: black;" download="Jake Johannes Halili van Halder resume">Download CV</a></button>
-                        <button class="website-settings-toggle display-md-inline-flex display-sm-none" style="margin-left: 10px;" aria-controls="settings" aria-expanded="false" aria-label="Open website settings">
-                            <span class="sr-only">Settings</span>
-                        </button>
-                        <div class="settings display-sm-none" id="settings">
-                            <ul aria-label="Website settings list" role="list" class="settings-list">
-                                <li>Work in progress</li>                                
-                                <div class="even-columns">
-                                    <li>Darkmode</li>
-                                    <label class="switch" id="theme-switch">
-                                        <input type="checkbox" onclick="myFunction()" id="checkboxToggle" aria-label="Toggle dark mode">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div> 
-                                <li>Change website language</li>                               
-                            </ul>
-                        </div>
-                    </div>              
+                    </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="padding-block-900">
-                <div class="even-columns container sm-sc-center">
-                    <div>
-                        <h1 class="fw-bold fs-primary-heading">Hi! I'm Jake.</h1>
-                        <p class="fw-bold">SWE Intern at <a href="https://selinc.com/" target="_blank" rel="noopener noreferrer">Schweitzer Engineering Laboratories</a></p>
-                        <ul role="list" aria-label="social media links" class="social-media-list">
-                            <li><a aria-label="Visit Jake van Halder's GitHub" href="https://github.com/jakevanhalder"><img src="pictures/github-logo.png" alt="GitHub logo"></a></li>
-                            <li><a aria-label="Send an email to Jake van Halder" href="mailto:jakevhbusiness@gmail.com"><img src="pictures/gmail-logo.png" alt="Gmail logo"></a></li>
-                            <li><a aria-label="Visit Jake van Halder's LinkedIn" href="https://www.linkedin.com/in/jakevanhalder/"><img src="pictures/linkedin-logo.png" alt="LinkedIn logo"></a></li>
-                        </ul>
-                    </div>
-                    <div class="profile-picture">
-                        <img src="pictures/pfp.png" alt="Animated profile picture of Jake van Halder">
-                    </div>
+        </div>
+    </header>
+    <main>
+        <section class="padding-block-900">
+            <div class="even-columns container sm-sc-center">
+                <div>
+                    <h1 class="fw-bold fs-primary-heading">Hi! I'm Jake.</h1>
+                    <p class="fw-bold">SWE Intern at <a href="https://selinc.com/" target="_blank"
+                            rel="noopener noreferrer">Schweitzer Engineering Laboratories</a></p>
+                    <ul role="list" aria-label="social media links" class="social-media-list">
+                        <li><a aria-label="Visit Jake van Halder's GitHub" href="https://github.com/jakevanhalder"
+                                target="_blank" rel="noopener noreferrer"><img src="pictures/github-logo.png"
+                                    alt="GitHub logo"></a></li>
+                        <li><a aria-label="Send an email to Jake van Halder" href="mailto:jakevhbusiness@gmail.com"
+                                target="_blank" rel="noopener noreferrer"><img src="pictures/gmail-logo.png"
+                                    alt="Gmail logo"></a></li>
+                        <li><a aria-label="Visit Jake van Halder's LinkedIn"
+                                href="https://www.linkedin.com/in/jakevanhalder/" target="_blank"
+                                rel="noopener noreferrer"><img src="pictures/linkedin-logo.png" alt="LinkedIn logo"></a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="profile-picture">
+                    <img src="pictures/pfp.png" alt="Animated profile picture of Jake van Halder">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>

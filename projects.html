@@ -1,133 +1,150 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jake van Halder</title>
+<html lang="en">
 
-        <!--css-->
-        <link rel="stylesheet" href="portfolio.css">
+<head>
+    <title>Jake van Halder</title>
 
-        <!-- Add jQuery from a CDN -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="portfolio.css">
 
-        <!--JavaScript-->
-        <script src="script.js" defer></script>
+    <!-- Add jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!--font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--JavaScript-->
+    <script src="script.js" defer></script>
 
-        <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
-        <link rel="manifest" href="pictures/favicons/site.webmanifest">
-        <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-        <!--meta tags-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header class="primary-header">
-            <div class="container">
-                <div class="nav-wrapper">
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
+    <link rel="manifest" href="pictures/favicons/site.webmanifest">
+    <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+                    aria-label="Open main navigation menu">
                     <span class="sr-only">Menu</span>
                 </button>
                 <nav class="primary-navigation" id="primary-navigation">
-                    <ul aria-label="navigation" role="list" class="nav-list"> 
+                    <ul aria-label="navigation" role="list" class="nav-list">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./photography.html">Photography</a></li>
                     </ul>
                 </nav>
-                <button class="button | display-sm-none display-md-inline-flex"><a href="pictures/resume.pdf" style="text-decoration: none; color: black;" download="Jake Johannes Halili van Halder resume">Download CV</a></button>
-                </div>
+                <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a
+                        href="pictures/resume.pdf" style="text-decoration: none; color: black;"
+                        download="Jake Johannes Halili van Halder resume">Download CV</a></button>
             </div>
-        </header>
-        <main>
-            <section class="padding-block-900">
-                <div class="even-columns container">
-                    <div>
-                        <div style="text-align: center;">
-                            <h1 class="fw-bold fs-primary-heading">Projects</h1>
-                            <p class="fw-bold">A collection of my personal projects</p>
+        </div>
+    </header>
+    <main>
+        <section class="padding-block-900">
+            <div class="even-columns container">
+                <div>
+                    <div style="text-align: center;">
+                        <h1 class="fw-bold fs-primary-heading">Projects</h1>
+                        <p class="fw-bold">A collection of my personal projects</p>
+                    </div>
+
+                    <div class="projects">
+
+                        <div class="project-item">
+                            <picture class="project-list-img">
+                                <img src="pictures/pfp.png" alt="An animated picture of Jake van Halder">
+                            </picture>
+
+                            <div class="project-content">
+                                <h2 class="project-title">Portfolio</h2>
+
+                                <p>
+                                    Check out how I made this portfolio using HTML, CSS, and Javascript!
+                                </p>
+
+                                <a class="button" href="https://github.com/jakevanhalder/portfolio"
+                                    style="display: inline-flex; justify-content: center; align-items: center;">Learn
+                                    More</a>
+                            </div>
                         </div>
 
-                        <div class="projects">
+                        <div class="project-item">
+                            <picture class="project-list-img">
+                                <img src="pictures/pulse-logo.png" alt="On Track logo">
+                            </picture>
 
-                            <div class="project-item">           
-                                <picture class="project-list-img">
-                                    <img src="pictures/pfp.png" alt="An animated picture of Jake van Halder">
-                                </picture>
+                            <div class="project-content">
+                                <h2 class="project-title">Pulse</h2>
 
-                                <div class="project-content">
-                                    <h2 class="project-title">Portfolio</h2>
+                                <p>
+                                    Pulse is a C# ASP.NET Core MVC application developed to help the user focus on
+                                    important goals and tasks in their upcoming week.
+                                </p>
 
-                                    <p>
-                                        Check out how I made this portfolio using HTML, CSS, and Javascript!
-                                    </p>
-                                    
-                                    <a class="button" href="https://github.com/jakevanhalder/portfolio" style="display: inline-flex; justify-content: center; align-items: center;">Learn More</a>
-                                </div>
+                                <a class="button" href="https://github.com/jakevanhalder/Pulse"
+                                    style="display: inline-flex; justify-content: center; align-items: center;">Learn
+                                    More</a>
                             </div>
+                        </div>
 
-                            <div class="project-item">           
-                                <picture class="project-list-img">
-                                    <img src="pictures/pulse-logo.png" alt="On Track logo">
-                                </picture>
+                        <div class="project-item">
+                            <picture class="project-list-img">
+                                <img src="pictures/make-cents.png" alt="Wireframe picture of the MakeCents website">
+                            </picture>
 
-                                <div class="project-content">
-                                    <h2 class="project-title">Pulse</h2>
+                            <div class="project-content">
+                                <h2 class="project-title">MakeCents</h2>
 
-                                    <p>
-                                        Pulse is a C# ASP.NET Core MVC application developed to help the user focus on important goals and tasks in their upcoming week.
-                                    </p>
-                                    
-                                    <a class="button" href="https://github.com/jakevanhalder/Pulse" style="display: inline-flex; justify-content: center; align-items: center;">Learn More</a>
-                                </div>
-                            </div> 
+                                <p>
+                                    A financial management tool made using the MERN stack. Aiming to help users by
+                                    providing personalized recommendations for saving and investing.
+                                </p>
 
-                            <div class="project-item">
-                                <picture class="project-list-img">
-                                    <img src="pictures/make-cents.png" alt="Wireframe picture of the MakeCents website">
-                                </picture>
-
-                                <div class="project-content">
-                                    <h2 class="project-title">MakeCents</h2>
-
-                                    <p>
-                                        A financial management tool made using the MERN stack. Aiming to help users by providing personalized recommendations for saving and investing. 
-                                    </p>
-                                    
-                                    <a class="button" href="https://github.com/jakevanhalder/MakeCents" style="display: inline-flex; justify-content: center; align-items: center;">Learn More</a>
-                                </div>
+                                <a class="button" href="https://github.com/jakevanhalder/MakeCents"
+                                    style="display: inline-flex; justify-content: center; align-items: center;">Learn
+                                    More</a>
                             </div>
-                            
-                            <div class="project-item">
-                                <picture class="project-list-img">
-                                    <img src="pictures/Recipe-Tracker-Light.png" alt="Recipe Tracker logo">
-                                </picture>
+                        </div>
 
-                                <div class="project-content">
-                                    <h2 class="project-title">Recipe Tracker</h2>
+                        <div class="project-item">
+                            <picture class="project-list-img">
+                                <img src="pictures/Recipe-Tracker-Light.png" alt="Recipe Tracker logo">
+                            </picture>
 
-                                    <p>
-                                        An android recipe app made with JetPack Compose. 
-                                        Providing users with a convenient, organized platform to save and easily access their favorite recipes. 
-                                    </p>
-                                    
-                                    <a class="button" href="https://github.com/jakevanhalder/Android-Recipe-app" style="display: inline-flex; justify-content: center; align-items: center;">Learn More</a>
-                                </div>
+                            <div class="project-content">
+                                <h2 class="project-title">Recipe Tracker</h2>
+
+                                <p>
+                                    An android recipe app made with JetPack Compose.
+                                    Providing users with a convenient, organized platform to save and easily access
+                                    their favorite recipes.
+                                </p>
+
+                                <a class="button" href="https://github.com/jakevanhalder/Android-Recipe-app"
+                                    style="display: inline-flex; justify-content: center; align-items: center;">Learn
+                                    More</a>
                             </div>
-                        </div>                      
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>

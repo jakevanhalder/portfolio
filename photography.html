@@ -1,193 +1,246 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jake van Halder</title>
+<html lang="en">
 
-        <!--css-->
-        <link rel="stylesheet" href="portfolio.css">
+<head>
+    <title>Jake van Halder</title>
 
-        <!--JavaScript-->
-        <script src="script.js" defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="portfolio.css">
 
-        <!--font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--JavaScript-->
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
-        <link rel="manifest" href="pictures/favicons/site.webmanifest">
-        <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-        <!--meta tags-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header class="primary-header">
-            <div class="container">
-                <div class="nav-wrapper">
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
+    <link rel="manifest" href="pictures/favicons/site.webmanifest">
+    <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
+                    aria-label="Open main navigation menu">
                     <span class="sr-only">Menu</span>
                 </button>
                 <nav class="primary-navigation" id="primary-navigation">
-                    <ul aria-label="navigation" role="list" class="nav-list"> 
+                    <ul aria-label="navigation" role="list" class="nav-list">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./photography.html">Photography</a></li>
                     </ul>
                 </nav>
-                <button class="button | display-sm-none display-md-inline-flex"><a href="pictures/resume.pdf" style="text-decoration: none; color: black;" download="Jake Johannes Halili van Halder resume">Download CV</a></button>
+                <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a
+                        href="pictures/resume.pdf" style="text-decoration: none; color: black;"
+                        download="Jake Johannes Halili van Halder resume">Download CV</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="padding-block-900">
+            <div class="even-columns container">
+                <div style="text-align: center;">
+                    <h1 class="fw-bold fs-primary-heading">Photography</h1>
+                    <p class="fw-bold">A collection of my personal photographs</p>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="padding-block-900">
-                <div class="even-columns container">
-                    <div style="text-align: center;">
-                        <h1 class="fw-bold fs-primary-heading">Photography</h1>
-                        <p class="fw-bold">A collection of my personal photographs</p>
-                    </div>  
+            <!--Photographs-->
+            <div class="photo-grid grid">
+                <div class="photo-container">
+                    <img decoding="sync" data-enlargeable
+                        src="pictures/optimized-photos/forest-railroad-graham-washington.jpg"
+                        alt="A picture of rail road tracks in a forest.">
+                    <div class="bottom-left">Graham, Washington</div>
                 </div>
-                <!--Photographs-->
-                <div class="photo-grid grid">
-                    <div class="photo-container">
-                        <img decoding="sync" data-enlargeable src="pictures/optimized-photos/forest-railroad-graham-washington.jpg" alt="A picture of rail road tracks in a forest.">
-                        <div class="bottom-left">Graham, Washington</div>
-                    </div>
 
-                    <div class="photo-container">
-                        <img decoding="sync" data-enlargeable src="pictures/optimized-photos/baby-possum.jpg" alt="A picture of a baby possum hiding between the grass.">
-                        <div class="bottom-left">Graham, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img decoding="sync" data-enlargeable src="pictures/optimized-photos/yellow-flower-puyallup-washington.jpg" alt="A close up picture of a yellow flower.">
-                        <div class="bottom-left">Puyallup, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img data-enlargeable src="pictures/optimized-photos/moon-washington.JPG" alt="A picture of the moon.">
-                        <div class="bottom-left">Washington State</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img decoding="sync" data-enlargeable src="pictures/optimized-photos/random-puddle.JPG" alt="A picture of a puddle.">
-                        <div class="bottom-left">Washington State</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img data-enlargeable src="pictures/optimized-photos/empty-cafe-puyallup-washington.JPG" alt="A picture of an empty cafe.">
-                        <div class="bottom-left">Puyallup Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/stargazing-mt-rainier-washington.jpg" alt="A picture of people stargazing.">
-                        <div class="bottom-left">Mt. Rainier, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/waterside-washington.jpg" alt="A picture of Washington state's waterside with houses to the left and a boat in the center.">
-                        <div class="bottom-left">Washington State</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/mt-rainier-lake-tapps-washington.jpg" alt="A picture of Mt. Rainier.">
-                        <div class="bottom-left">Lake Tapps, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/the-journey-mt-rainier-washington.jpg" alt="A picture of two hikers trudging up a snowy hill.">
-                        <div class="bottom-left">Mt. Rainier, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/under-the-vines-puyallup-washington.JPG" alt="A picture of the side of a house taken behind some vines.">
-                        <div class="bottom-left">Puyallup, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/wooden-fence-washington.jpg" alt="A picture of Mt. Rainiers landscape. Hilly area surronded by trees with a wooden fence at the bottom left.">
-                        <div class="bottom-left">Mt. Rainier, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/meadow-hills-mt-rainier-washington.jpg" alt="A picture of Mt. Rainiers meadow hills.">
-                        <div class="bottom-left">Mt. Rainier, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/walmart-crow-puyallup-washington.jpg" alt="A picture of a crow.">
-                        <div class="bottom-left">Puyallup, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/star-shopping-orcas-island-washington.jpg" alt="A picture of stars.">
-                        <div class="bottom-left">Orcas Island, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/lake-whatcom-washington-state.JPG" alt="A picture of lake Whatcom with houses in the background.">
-                        <div class="bottom-left">Lake Whatcom, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/meadow-grass-mt-rainier-washington.jpg" alt="A picture of a meadow in Mt. Rainier.">
-                        <div class="bottom-left">Mt. Rainier, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/houses-juneau-alaska.JPG" alt="A picture of some houses in Juneau Alaska.">
-                        <div class="bottom-left">Juneau, Alaska</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/bridge-pullman-washington.jpg" alt="A picture of a bridge in Pullman Washington.">
-                        <div class="bottom-left">Pullman, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/above-the-hills-pullman-washington.jpg" alt="A picture of the farmlands surrounding Pullman Washington.">
-                        <div class="bottom-left">Pullman, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/winter-snow-pullman-washington.jpg" alt="A picture of clouds wit houses and snow on the ground in Pullman Washington.">
-                        <div class="bottom-left">Pullman, Washington</div>
-                    </div>
-
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/skyscrapers-miami-florida.jpg" alt="A picture of some skyscrapers in Miami Florida.">
-                        <div class="bottom-left">Miami, Florida</div>
-                    </div>
-                    
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/miami-florida.jpg" alt="A picture of the water in Miami Florida with some buildings to the left and a cruise ship to the right.">
-                        <div class="bottom-left">Miami, Florida</div>
-                    </div>
-                    
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/sunsets-pullman-washington.jpg" alt="A picture of the sunset in Pullman Washington.">
-                        <div class="bottom-left">Pullman, Washington</div>
-                    </div>
-                    
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/sunsets-ocean-shores-washington.jpeg" alt="A picture of the sunset in Ocean Shores with some people in the foreground.">
-                        <div class="bottom-left">Ocean Shores, Washington</div>
-                    </div>
-                    
-                    <div class="photo-container">
-                        <img loading="lazy" decoding=“async” data-enlargeable src="pictures/optimized-photos/keywest-florida.jpg" alt="A picture of the sunset in Keywest Florida at a beach">
-                        <div class="bottom-left">Keywest, Florida</div>
-                    </div>     
+                <div class="photo-container">
+                    <img decoding="sync" data-enlargeable src="pictures/optimized-photos/baby-possum.jpg"
+                        alt="A picture of a baby possum hiding between the grass.">
+                    <div class="bottom-left">Graham, Washington</div>
                 </div>
-            </section>
-        </main>
-    </body>
+
+                <div class="photo-container">
+                    <img decoding="sync" data-enlargeable
+                        src="pictures/optimized-photos/yellow-flower-puyallup-washington.jpg"
+                        alt="A close up picture of a yellow flower.">
+                    <div class="bottom-left">Puyallup, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img data-enlargeable src="pictures/optimized-photos/moon-washington.JPG"
+                        alt="A picture of the moon.">
+                    <div class="bottom-left">Washington State</div>
+                </div>
+
+                <div class="photo-container">
+                    <img decoding="sync" data-enlargeable src="pictures/optimized-photos/random-puddle.JPG"
+                        alt="A picture of a puddle.">
+                    <div class="bottom-left">Washington State</div>
+                </div>
+
+                <div class="photo-container">
+                    <img data-enlargeable src="pictures/optimized-photos/empty-cafe-puyallup-washington.JPG"
+                        alt="A picture of an empty cafe.">
+                    <div class="bottom-left">Puyallup Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/stargazing-mt-rainier-washington.jpg"
+                        alt="A picture of people stargazing.">
+                    <div class="bottom-left">Mt. Rainier, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/waterside-washington.jpg"
+                        alt="A picture of Washington state's waterside with houses to the left and a boat in the center.">
+                    <div class="bottom-left">Washington State</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/mt-rainier-lake-tapps-washington.jpg"
+                        alt="A picture of Mt. Rainier.">
+                    <div class="bottom-left">Lake Tapps, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/the-journey-mt-rainier-washington.jpg"
+                        alt="A picture of two hikers trudging up a snowy hill.">
+                    <div class="bottom-left">Mt. Rainier, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/under-the-vines-puyallup-washington.JPG"
+                        alt="A picture of the side of a house taken behind some vines.">
+                    <div class="bottom-left">Puyallup, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/wooden-fence-washington.jpg"
+                        alt="A picture of Mt. Rainiers landscape. Hilly area surronded by trees with a wooden fence at the bottom left.">
+                    <div class="bottom-left">Mt. Rainier, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/meadow-hills-mt-rainier-washington.jpg"
+                        alt="A picture of Mt. Rainiers meadow hills.">
+                    <div class="bottom-left">Mt. Rainier, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/walmart-crow-puyallup-washington.jpg" alt="A picture of a crow.">
+                    <div class="bottom-left">Puyallup, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/star-shopping-orcas-island-washington.jpg"
+                        alt="A picture of stars.">
+                    <div class="bottom-left">Orcas Island, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/lake-whatcom-washington-state.JPG"
+                        alt="A picture of lake Whatcom with houses in the background.">
+                    <div class="bottom-left">Lake Whatcom, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/meadow-grass-mt-rainier-washington.jpg"
+                        alt="A picture of a meadow in Mt. Rainier.">
+                    <div class="bottom-left">Mt. Rainier, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/houses-juneau-alaska.JPG"
+                        alt="A picture of some houses in Juneau Alaska.">
+                    <div class="bottom-left">Juneau, Alaska</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/bridge-pullman-washington.jpg"
+                        alt="A picture of a bridge in Pullman Washington.">
+                    <div class="bottom-left">Pullman, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/above-the-hills-pullman-washington.jpg"
+                        alt="A picture of the farmlands surrounding Pullman Washington.">
+                    <div class="bottom-left">Pullman, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/winter-snow-pullman-washington.jpg"
+                        alt="A picture of clouds wit houses and snow on the ground in Pullman Washington.">
+                    <div class="bottom-left">Pullman, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/skyscrapers-miami-florida.jpg"
+                        alt="A picture of some skyscrapers in Miami Florida.">
+                    <div class="bottom-left">Miami, Florida</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/miami-florida.jpg"
+                        alt="A picture of the water in Miami Florida with some buildings to the left and a cruise ship to the right.">
+                    <div class="bottom-left">Miami, Florida</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/sunsets-pullman-washington.jpg"
+                        alt="A picture of the sunset in Pullman Washington.">
+                    <div class="bottom-left">Pullman, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/sunsets-ocean-shores-washington.jpeg"
+                        alt="A picture of the sunset in Ocean Shores with some people in the foreground.">
+                    <div class="bottom-left">Ocean Shores, Washington</div>
+                </div>
+
+                <div class="photo-container">
+                    <img loading="lazy" decoding=“async” data-enlargeable
+                        src="pictures/optimized-photos/keywest-florida.jpg"
+                        alt="A picture of the sunset in Keywest Florida at a beach">
+                    <div class="bottom-left">Keywest, Florida</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
