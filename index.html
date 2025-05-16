@@ -34,7 +34,12 @@
         <header class="primary-header">
             <div class="container">
                 <div class="nav-wrapper">
-                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <button 
+                        class="mobile-nav-toggle" 
+                        aria-controls="primary-navigation" 
+                        aria-expanded="false"
+                        aria-label="Open main navigation menu"
+                    >
                         <span class="sr-only">Menu</span>
                     </button>
                     <nav class="primary-navigation" id="primary-navigation">
@@ -46,8 +51,8 @@
                         </ul>
                     </nav>
                     <div>
-                        <button class="button | display-sm-none display-md-inline-flex"><a href="pictures/resume.pdf" style="text-decoration: none; color: black;" download="Jake Johannes Halili van Halder resume">Download CV</a></button>
-                        <button class="website-settings-toggle display-md-inline-flex display-sm-none" style="margin-left: 10px;" aria-controls="settings" aria-expanded="false">
+                        <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a href="pictures/resume.pdf" style="text-decoration: none; color: black;" download="Jake Johannes Halili van Halder resume">Download CV</a></button>
+                        <button class="website-settings-toggle display-md-inline-flex display-sm-none" style="margin-left: 10px;" aria-controls="settings" aria-expanded="false" aria-label="Open website settings">
                             <span class="sr-only">Settings</span>
                         </button>
                         <div class="settings display-sm-none" id="settings">
@@ -56,7 +61,7 @@
                                 <div class="even-columns">
                                     <li>Darkmode</li>
                                     <label class="switch" id="theme-switch">
-                                        <input type="checkbox" onclick="myFunction()" id="checkboxToggle">
+                                        <input type="checkbox" onclick="myFunction()" id="checkboxToggle" aria-label="Toggle dark mode">
                                         <span class="slider round"></span>
                                     </label>
                                 </div> 
@@ -72,15 +77,15 @@
                 <div class="even-columns container sm-sc-center">
                     <div>
                         <h1 class="fw-bold fs-primary-heading">Hi! I'm Jake.</h1>
-                        <p class="fw-bold">An aspiring software developer.</p>
+                        <p class="fw-bold">SWE Intern at <a href="https://selinc.com/" target="_blank" rel="noopener noreferrer">Schweitzer Engineering Laboratories</a></p>
                         <ul role="list" aria-label="social media links" class="social-media-list">
-                            <li><a aria-label="GitHub" href="https://github.com/jakevanhalder"><img src="pictures/github-logo.png" alt="Link to Jake van Halders GitHub"></a></li>
-                            <li><a aria-label="E-mail" href="mailto:jakevhbusiness@gmail.com"><img src="pictures/gmail-logo.png" alt="Link to Jake van Halders E-mail"></a></li>
-                            <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/jakevanhalder/"><img src="pictures/linkedin-logo.png" alt="Link to Jake van Halder LinkedIn"></a></li>
+                            <li><a aria-label="Visit Jake van Halder's GitHub" href="https://github.com/jakevanhalder"><img src="pictures/github-logo.png" alt="GitHub logo"></a></li>
+                            <li><a aria-label="Send an email to Jake van Halder" href="mailto:jakevhbusiness@gmail.com"><img src="pictures/gmail-logo.png" alt="Gmail logo"></a></li>
+                            <li><a aria-label="Visit Jake van Halder's LinkedIn" href="https://www.linkedin.com/in/jakevanhalder/"><img src="pictures/linkedin-logo.png" alt="LinkedIn logo"></a></li>
                         </ul>
                     </div>
                     <div class="profile-picture">
-                        <img src="pictures/pfp.png" alt="">
+                        <img src="pictures/pfp.png" alt="Animated profile picture of Jake van Halder">
                     </div>
                 </div>
             </section>
