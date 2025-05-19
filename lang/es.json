@@ -1,0 +1,171 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "projects": "Proyectos",
+        "photography": "Fotografía"
+    },
+    "settings": {
+        "title": "Configuración",
+        "darkmode": "Modo oscuro",
+        "change_language": "Idioma",
+        "download_cv": "Descargar CV"
+    },
+    "intro": {
+        "title": "¡Hola! Soy Jake.",
+        "subtitle_prefix": "Pasante de ingeniería de software en ",
+        "subtitle_link": "Schweitzer Engineering Laboratories"
+    },
+    "social": {
+        "github_alt": "Logo de GitHub",
+        "gmail_alt": "Logo de Gmail",
+        "linkedin_alt": "Logo de LinkedIn"
+    },
+    "profile_picture_alt": "Imagen de perfil animada de Jake van Halder",
+    "about": {
+        "title": "Sobre mí",
+        "subtitle_prefix": "Estoy en mi último año como estudiante de Ciencias de la Computación en Washington State University. Como pasante de SWE en Schweitzer Engineering Laboratories, me enfoco en crear software escalable de nivel empresarial y mejorar el rendimiento del sistema. También desarrollo el frontend para una aplicación web GIS de ",
+        "subtitle_link": "análisis de cuencas ",
+        "subtitle_suffix": "que visualiza datos hidrológicos y ambientales en cuencas del oeste de EE. UU. y Canadá. Si necesitas a alguien con ganas de aprender, innovar y comprometido a entregar resultados, ¡hablemos!"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Una colección de mis proyectos personales"
+    },
+    "projects_list": {
+        "utility": {
+            "title": "Utility Watershed Analytics",
+            "description": "Una aplicación web GIS de análisis de cuencas, diseñada para visualizar y analizar datos hidrológicos y ambientales en el oeste de EE.UU. y Canadá",
+            "button": "Más información",
+            "alt": "Logo de Utility Watershed Analytics"
+        },
+        "pulse": {
+            "title": "Pulse",
+            "description": "Pulse es una aplicación C# ASP.NET Core MVC desarrollada para ayudar al usuario a enfocarse en objetivos y tareas importantes de su semana próxima.",
+            "button": "Más información",
+            "alt": "Logo de Pulse"
+        },
+        "graph": {
+            "title": "Graph Theorist's Sketchpad",
+            "description": "Una herramienta interactiva 3D en Three.js para crear, visualizar y analizar grafos.",
+            "button": "Más información",
+            "alt": "Logo de Graph Theorist's Sketchpad"
+        },
+        "portfolio": {
+            "title": "Portafolio",
+            "description": "¡Mira cómo hice este portafolio usando HTML, CSS y JavaScript!",
+            "button": "Más información",
+            "alt": "Logo del sitio de portafolio"
+        }
+    },
+    "photography": {
+        "title": "Fotografía",
+        "subtitle": "Una colección de mis fotografías personales"
+    },
+    "photos": [
+        {
+            "alt": "Vías de tren en un bosque",
+            "caption": "Graham, Washington"
+        },
+        {
+            "alt": "Zarigüeya bebé escondida entre el césped",
+            "caption": "Graham, Washington"
+        },
+        {
+            "alt": "Primer plano de una flor amarilla",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "La luna",
+            "caption": "Estado de Washington"
+        },
+        {
+            "alt": "Un charco",
+            "caption": "Estado de Washington"
+        },
+        {
+            "alt": "Interior de una cafetería vacía",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Personas observando estrellas bajo el Monte Rainier",
+            "caption": "Monte Rainier, Washington"
+        },
+        {
+            "alt": "Orilla con casas y un bote",
+            "caption": "Estado de Washington"
+        },
+        {
+            "alt": "Monte Rainier sobre Lake Tapps",
+            "caption": "Lake Tapps, Washington"
+        },
+        {
+            "alt": "Dos excursionistas subiendo una colina nevada",
+            "caption": "Monte Rainier, Washington"
+        },
+        {
+            "alt": "Costado de una casa entre enredaderas",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Paisaje boscoso con cerca de madera",
+            "caption": "Monte Rainier, Washington"
+        },
+        {
+            "alt": "Colinas de pradera en Monte Rainier",
+            "caption": "Monte Rainier, Washington"
+        },
+        {
+            "alt": "Un cuervo posado en una pared",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Noche estrellada sobre Orcas Island",
+            "caption": "Orcas Island, Washington"
+        },
+        {
+            "alt": "Lake Whatcom con casas al fondo",
+            "caption": "Lake Whatcom, Washington"
+        },
+        {
+            "alt": "Pradera en Monte Rainier",
+            "caption": "Monte Rainier, Washington"
+        },
+        {
+            "alt": "Casas en Juneau, Alaska",
+            "caption": "Juneau, Alaska"
+        },
+        {
+            "alt": "Un puente en Pullman, Washington",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Campos alrededor de Pullman",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Nubes nevadas sobre casas de Pullman",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Rascacielos en Miami, Florida",
+            "caption": "Miami, Florida"
+        },
+        {
+            "alt": "Zona costera y crucero en Miami",
+            "caption": "Miami, Florida"
+        },
+        {
+            "alt": "Atardecer sobre Pullman",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Atardecer en Ocean Shores con gente",
+            "caption": "Ocean Shores, Washington"
+        },
+        {
+            "alt": "Atardecer en la playa de Key West",
+            "caption": "Key West, Florida"
+        }
+    ]
+}

@@ -42,15 +42,44 @@
                 </button>
                 <nav class="primary-navigation" id="primary-navigation">
                     <ul aria-label="navigation" role="list" class="nav-list">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./photography.html">Photography</a></li>
+                        <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="./projects.html" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="./photography.html" data-i18n="nav.photography">Photography</a></li>
                     </ul>
                 </nav>
-                <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a
-                        href="pictures/resume.pdf" style="text-decoration: none; color: black;"
-                        download="Jake Johannes Halili van Halder resume">Download CV</a></button>
+                <div>
+                    <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a
+                            href="pictures/resume.pdf" style="text-decoration: none; color: black;"
+                            download="Jake Johannes Halili van Halder resume" data-i18n="settings.download_cv">Download
+                            CV</a></button>
+                    <button class="website-settings-toggle display-md-inline-flex display-sm-none"
+                        style="margin-left: 10px;" aria-controls="settings" aria-expanded="false"
+                        aria-label="Open website settings">
+                        <span class="sr-only">Settings</span>
+                    </button>
+                    <div class="settings display-sm-none" id="settings">
+                        <ul aria-label="Website settings list" role="list" class="settings-list">
+                            <li data-i18n="settings.title">Settings</li>
+                            <div class="even-columns">
+                                <li data-i18n="settings.darkmode">Darkmode</li>
+                                <label class="switch" id="theme-switch">
+                                    <input type="checkbox" onclick="myFunction()" id="checkboxToggle"
+                                        aria-label="Toggle dark mode">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="even-columns">
+                                <li data-i18n="settings.change_language">Language</li>
+                                <select id="language-select">
+                                    <option value="en">English</option>
+                                    <option value="tl">Tagalog</option>
+                                    <!--<option value="es">Español</option>-->
+                                </select>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -58,18 +87,22 @@
         <section class="padding-block-900">
             <div class="even-columns container sm-sc-center">
                 <div>
-                    <h1 class="fw-bold fs-primary-heading">About Me</h1>
+                    <h1 class="fw-bold fs-primary-heading" data-i18n="about.title">About Me</h1>
                     <p class="fw-bold">
-                        I'm entering my final year as a Computer Science major at Washington State University. As a
-                        SWE Intern at Schweitzer Engineering Laboratories, I focus on building
-                        scalable, enterprise-grade software and improving system performance. I also develop the
-                        frontend for a GIS-based <a href="https://unstable.wepp.cloud/" target="_blank"
-                            rel="noopener noreferrer" aria-label="Visit Utility Watershed Analytics">watershed
-                            analytics</a> web application that visualizes hydrologic and
-                        environmental data across Western U.S. and Canadian watersheds. If you
-                        need someone who&apos;s eager to learn, ready to innovate, and dedicated to delivering results,
-                        let&apos;s
-                        chat!
+                        <span data-i18n="about.subtitle_prefix">I'm entering my final year as a Computer Science major
+                            at Washington State University. As a
+                            SWE Intern at Schweitzer Engineering Laboratories, I focus on building
+                            scalable, enterprise-grade software and improving system performance. I also develop the
+                            frontend for a GIS-based</span> <a href="https://unstable.wepp.cloud/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit Utility Watershed Analytics"
+                            data-i18n="about.subtitle_link">watershed
+                            analytics</a> <span data-i18n="about.subtitle_suffix">web application that visualizes
+                            hydrologic and
+                            environmental data across Western U.S. and Canadian watersheds. If you
+                            need someone who&apos;s eager to learn, ready to innovate, and dedicated to delivering
+                            results,
+                            let&apos;s
+                            chat!</span>
                     </p>
                 </div>
                 <div class="profile-picture">

@@ -1,0 +1,171 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "photography": "Photography"
+    },
+    "settings": {
+        "title": "Settings",
+        "darkmode": "Darkmode",
+        "change_language": "Language",
+        "download_cv": "Download CV"
+    },
+    "intro": {
+        "title": "Hi! I'm Jake.",
+        "subtitle_prefix": "SWE Intern at ",
+        "subtitle_link": "Schweitzer Engineering Laboratories"
+    },
+    "social": {
+        "github_alt": "GitHub logo",
+        "gmail_alt": "Gmail logo",
+        "linkedin_alt": "LinkedIn logo"
+    },
+    "profile_picture_alt": "Animated profile picture of Jake van Halder",
+    "about": {
+        "title": "About Me",
+        "subtitle_prefix": "I'm entering my final year as a Computer Science major at Washington State University. As a SWE Intern at Schweitzer Engineering Laboratories, I focus on building scalable, enterprise-grade software and improving system performance. I also develop the frontend for a GIS-based ",
+        "subtitle_link": "watershed analytics ",
+        "subtitle_suffix": "web application that visualizes hydrologic and environmental data across Western U.S. and Canadian watersheds. If you need someone who&apos;s eager to learn, ready to innovate, and dedicated to delivering results, let&apos;s chat!"
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "A collection of my personal projects"
+    },
+    "projects_list": {
+        "utility": {
+            "title": "Utility Watershed Analytics",
+            "description": "A GIS-based watershed analytics web application, designed to visualize and analyze hydrologic and environmental data across western U.S. & Canadian watersheds",
+            "button": "Learn More",
+            "alt": "Utility Watershed Analytics logo"
+        },
+        "pulse": {
+            "title": "Pulse",
+            "description": "Pulse is a C# ASP.NET Core MVC application developed to help the user focus on important goals and tasks in their upcoming week.",
+            "button": "Learn More",
+            "alt": "Pulse logo"
+        },
+        "graph": {
+            "title": "Graph Theorist's Sketchpad",
+            "description": "A 3D Three.js interactive tool for creating, visualizing, and analyzing graphs.",
+            "button": "Learn More",
+            "alt": "Graph Theorist's Sketchpad logo"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Check out how I made this portfolio using HTML, CSS, and JavaScript!",
+            "button": "Learn More",
+            "alt": "Portfolio website logo"
+        }
+    },
+    "photography": {
+        "title": "Photography",
+        "subtitle": "A collection of my personal photographs"
+    },
+    "photos": [
+        {
+            "alt": "Railroad tracks in a forest",
+            "caption": "Graham, Washington"
+        },
+        {
+            "alt": "Baby possum hiding between the grass",
+            "caption": "Graham, Washington"
+        },
+        {
+            "alt": "Close-up of a yellow flower",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "The moon",
+            "caption": "Washington State"
+        },
+        {
+            "alt": "A puddle",
+            "caption": "Washington State"
+        },
+        {
+            "alt": "An empty cafe interior",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "People stargazing under Mt. Rainier",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Waterside with houses and a boat",
+            "caption": "Washington State"
+        },
+        {
+            "alt": "Mt. Rainier over Lake Tapps",
+            "caption": "Lake Tapps, Washington"
+        },
+        {
+            "alt": "Two hikers trudging up a snowy hill",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Side of a house behind vines",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Hilly forest landscape with wooden fence",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Meadow hills at Mt. Rainier",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "A crow perched on a wall",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Starry night over Orcas Island",
+            "caption": "Orcas Island, Washington"
+        },
+        {
+            "alt": "Lake Whatcom with houses in background",
+            "caption": "Lake Whatcom, Washington"
+        },
+        {
+            "alt": "Meadow grass at Mt. Rainier",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Houses in Juneau, Alaska",
+            "caption": "Juneau, Alaska"
+        },
+        {
+            "alt": "A bridge in Pullman, Washington",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Farmlands surrounding Pullman",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Snowy clouds over Pullman homes",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Skyscrapers in Miami, Florida",
+            "caption": "Miami, Florida"
+        },
+        {
+            "alt": "Waterfront and cruise ship in Miami",
+            "caption": "Miami, Florida"
+        },
+        {
+            "alt": "Sunset over Pullman, Washington",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Sunset at Ocean Shores with people",
+            "caption": "Ocean Shores, Washington"
+        },
+        {
+            "alt": "Sunset at Key West beach",
+            "caption": "Key West, Florida"
+        }
+    ]
+}

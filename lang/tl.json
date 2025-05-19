@@ -1,0 +1,171 @@
+{
+    "nav": {
+        "home": "Bahay",
+        "about": "Tungkol sa Akin",
+        "projects": "Mga Proyekto",
+        "photography": "Potograpiya"
+    },
+    "settings": {
+        "title": "Mga Setting",
+        "darkmode": "Dilim",
+        "change_language": "Wika",
+        "download_cv": "I-download ang CV"
+    },
+    "intro": {
+        "title": "Kumusta! Ako si Jake.",
+        "subtitle_prefix": "SWE Intern sa ",
+        "subtitle_link": "Schweitzer Engineering Laboratories"
+    },
+    "social": {
+        "github_alt": "Logo ng GitHub",
+        "gmail_alt": "Logo ng Gmail",
+        "linkedin_alt": "Logo ng LinkedIn"
+    },
+    "profile_picture_alt": "Nakaka-animasyong larawan ni Jake van Halder",
+    "about": {
+        "title": "Tungkol sa Akin",
+        "subtitle_prefix": "Papapasok na ako sa aking huling taon bilang Computer Science major sa Washington State University. Bilang isang SWE Intern sa Schweitzer Engineering Laboratories, nakatuon ako sa pagbuo ng scalable, enterprise-grade software at pagpapabuti ng performance ng system. Gumagawa rin ako ng frontend para sa isang GIS-based na ",
+        "subtitle_link": "analytics ng watershed ",
+        "subtitle_suffix": "web application na nagpapakita ng hydrologic at environmental na datos sa mga watershed sa U.S. at Canada. Kung kailangan mo ng taong sabik matuto, handang mag-innovate, at dedikado sa paghahatid ng resulta, makipag-chat tayo!"
+    },
+    "projects": {
+        "title": "Mga Proyekto",
+        "subtitle": "Koleksyon ng aking personal proyekto"
+    },
+    "projects_list": {
+        "utility": {
+            "title": "Utility Watershed Analytics",
+            "description": "Isang GIS-based watershed analytics web application para ipakita at suriin ang hydrologic at environmental data sa U.S. & Canada",
+            "button": "Alamin Pa",
+            "alt": "Logo ng Utility Watershed Analytics"
+        },
+        "pulse": {
+            "title": "Pulse",
+            "description": "Ang Pulse ay isang C# ASP.NET Core MVC application na tumutulong sa user na magtuon sa mahahalagang layunin at gawain sa darating na linggo.",
+            "button": "Alamin Pa",
+            "alt": "Logo ng Pulse"
+        },
+        "graph": {
+            "title": "Graph Theorist's Sketchpad",
+            "description": "Isang 3D Three.js interactive tool para gumawa, mag-visualize, at mag-analisa ng mga graph.",
+            "button": "Alamin Pa",
+            "alt": "Logo ng Graph Theorist's Sketchpad"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "Tingnan kung paano ko ginawa ang portfolio na ito gamit ang HTML, CSS, at JavaScript!",
+            "button": "Alamin Pa",
+            "alt": "Logo ng website ng portfolio"
+        }
+    },
+    "photography": {
+        "title": "Potograpiya",
+        "subtitle": "Koleksyon ng aking personal na mga larawan"
+    },
+    "photos": [
+        {
+            "alt": "Riles ng tren sa kagubatan",
+            "caption": "Graham, Washington"
+        },
+        {
+            "alt": "Sanggol na possum na nagtatago sa damo",
+            "caption": "Graham, Washington"
+        },
+        {
+            "alt": "Close-up ng dilaw na bulaklak",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Ang buwan",
+            "caption": "Washington State"
+        },
+        {
+            "alt": "Isang puddle",
+            "caption": "Washington State"
+        },
+        {
+            "alt": "Isang bakanteng cafe interior",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Mga taong nagmamasid ng mga bituin sa ilalim ng Mt. Rainier",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Tabing-ilog na may bahay at bangka",
+            "caption": "Washington State"
+        },
+        {
+            "alt": "Mt. Rainier sa ibabaw ng Lake Tapps",
+            "caption": "Lake Tapps, Washington"
+        },
+        {
+            "alt": "Dalawang hiker na umaakyat ng may niyebe",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Gilid ng bahay sa likod ng mga ubas",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Gubat na tanawin na may makalumang bakod",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Burol ng parang sa Mt. Rainier",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Crow na nakatayo sa pader",
+            "caption": "Puyallup, Washington"
+        },
+        {
+            "alt": "Gabi ng mga bituin sa Orcas Island",
+            "caption": "Orcas Island, Washington"
+        },
+        {
+            "alt": "Lake Whatcom na may mga bahay sa likuran",
+            "caption": "Lake Whatcom, Washington"
+        },
+        {
+            "alt": "Parang damo sa Mt. Rainier",
+            "caption": "Mt. Rainier, Washington"
+        },
+        {
+            "alt": "Mga bahay sa Juneau, Alaska",
+            "caption": "Juneau, Alaska"
+        },
+        {
+            "alt": "Isang tulay sa Pullman, Washington",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Mga sakahan sa paligid ng Pullman",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Mga ulap na may niyebe sa ibabaw ng mga bahay",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Mga skyscraper sa Miami, Florida",
+            "caption": "Miami, Florida"
+        },
+        {
+            "alt": "Tabing-ilog at cruise ship sa Miami",
+            "caption": "Miami, Florida"
+        },
+        {
+            "alt": "Takipsilim sa Pullman, Washington",
+            "caption": "Pullman, Washington"
+        },
+        {
+            "alt": "Takipsilim sa Ocean Shores na may tao",
+            "caption": "Ocean Shores, Washington"
+        },
+        {
+            "alt": "Takipsilim sa Key West beach",
+            "caption": "Key West, Florida"
+        }
+    ]
+}
