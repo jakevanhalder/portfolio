@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Jake van Halder</title>
 
     <!--css-->
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio.css" />
 
     <!-- Add jQuery from a CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -14,173 +13,281 @@
     <script src="script.js" defer></script>
 
     <!--font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicons/favicon-16x16.png">
-    <link rel="manifest" href="pictures/favicons/site.webmanifest">
-    <link rel="mask-icon" href="pictures/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="pictures/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="pictures/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="pictures/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="pictures/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="pictures/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!--meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
+  <body>
     <header class="primary-header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"
-                    aria-label="Open main navigation menu">
-                    <span class="sr-only">Menu</span>
-                </button>
-                <nav class="primary-navigation" id="primary-navigation">
-                    <ul aria-label="navigation" role="list" class="nav-list">
-                        <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
-                        <li><a href="./about.html" data-i18n="nav.about">About</a></li>
-                        <li><a href="./projects.html" data-i18n="nav.projects">Projects</a></li>
-                        <li><a href="./photography.html" data-i18n="nav.photography">Photography</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <button class="button | display-sm-none display-md-inline-flex" aria-label="Download resume"><a
-                            href="pictures/resume.pdf" style="text-decoration: none; color: black;"
-                            download="Jake Johannes Halili van Halder resume" data-i18n="settings.download_cv">Download
-                            CV</a></button>
-                    <button class="website-settings-toggle display-md-inline-flex display-sm-none"
-                        style="margin-left: 10px;" aria-controls="settings" aria-expanded="false"
-                        aria-label="Open website settings">
-                        <span class="sr-only">Settings</span>
-                    </button>
-                    <div class="settings display-sm-none" id="settings">
-                        <ul aria-label="Website settings list" role="list" class="settings-list">
-                            <li data-i18n="settings.title">Settings</li>
-                            <div class="even-columns">
-                                <li data-i18n="settings.darkmode">Darkmode</li>
-                                <label class="switch" id="theme-switch">
-                                    <input type="checkbox" onclick="myFunction()" id="checkboxToggle"
-                                        aria-label="Toggle dark mode">
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
-                            <div class="even-columns">
-                                <li data-i18n="settings.change_language">Language</li>
-                                <select id="language-select">
-                                    <option value="en">English</option>
-                                    <option value="tl">Tagalog</option>
-                                    <!--<option value="es">Español</option>-->
-                                </select>
-                            </div>
-                        </ul>
-                    </div>
+      <div class="container">
+        <div class="nav-wrapper">
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            aria-label="Open main navigation menu"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="navigation" role="list" class="nav-list">
+              <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+              <li>
+                <a href="./projects.html" data-i18n="nav.projects">Projects</a>
+              </li>
+              <!-- <li><a href="./photography.html" data-i18n="nav.photography">Photography</a></li> -->
+            </ul>
+          </nav>
+          <div>
+            <button
+              class="button | display-sm-none display-md-inline-flex"
+              aria-label="Download resume"
+            >
+              <a
+                href="pictures/resume.pdf"
+                style="text-decoration: none; color: black"
+                download="Jake Johannes Halili van Halder resume"
+                data-i18n="settings.download_cv"
+                >Download CV</a
+              >
+            </button>
+            <button
+              class="website-settings-toggle display-md-inline-flex display-sm-none"
+              style="margin-left: 10px"
+              aria-controls="settings"
+              aria-expanded="false"
+              aria-label="Open website settings"
+            >
+              <span class="sr-only">Settings</span>
+            </button>
+            <div class="settings display-sm-none" id="settings">
+              <ul
+                aria-label="Website settings list"
+                role="list"
+                class="settings-list"
+              >
+                <li data-i18n="settings.title">Settings</li>
+                <div class="even-columns">
+                  <li data-i18n="settings.darkmode">Darkmode</li>
+                  <label class="switch" id="theme-switch">
+                    <input
+                      type="checkbox"
+                      onclick="myFunction()"
+                      id="checkboxToggle"
+                      aria-label="Toggle dark mode"
+                    />
+                    <span class="slider round"></span>
+                  </label>
                 </div>
+                <div class="even-columns">
+                  <li data-i18n="settings.change_language">Language</li>
+                  <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="tl">Tagalog</option>
+                    <!--<option value="es">Español</option>-->
+                  </select>
+                </div>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section class="padding-block-900">
-            <div class="even-columns container">
-                <div>
-                    <div style="text-align: center;">
-                        <h1 class="fw-bold fs-primary-heading" data-i18n="projects.title">Projects</h1>
-                        <p class="fw-bold" data-i18n="projects.subtitle">A collection of my personal projects</p>
-                    </div>
+      <section class="padding-block-900">
+        <div class="even-columns container">
+          <div>
+            <div style="text-align: center">
+              <h1 class="fw-bold fs-primary-heading" data-i18n="projects.title">
+                Projects
+              </h1>
+              <p class="fw-bold" data-i18n="projects.subtitle">
+                A collection of my personal projects
+              </p>
+            </div>
 
-                    <div class="projects">
+            <div class="projects">
+              <div class="project-item">
+                <picture class="project-list-img">
+                  <img
+                    src="pictures/utility-watershed-analytics-logo.png"
+                    alt="Utility Watershed Analytics logo"
+                  />
+                </picture>
 
-                        <div class="project-item">
-                            <picture class="project-list-img">
-                                <img src="pictures/utility-watershed-analytics-logo.png"
-                                    alt="Utility Watershed Analytics logo">
-                            </picture>
+                <div class="project-content">
+                  <h2
+                    class="project-title"
+                    data-i18n="projects_list.utility.title"
+                  >
+                    Utility Watershed Analytics
+                  </h2>
 
-                            <div class="project-content">
-                                <h2 class="project-title" data-i18n="projects_list.utility.title">Utility Watershed
-                                    Analytics</h2>
+                  <p data-i18n="projects_list.utility.description">
+                    A GIS-based watershed analytics web application, designed to
+                    visualize and analyze hydrologic and environmental data
+                    across western U.S. & Canadian watersheds
+                  </p>
 
-                                <p data-i18n="projects_list.utility.description">
-                                    A GIS-based watershed analytics web application, designed to visualize and analyze
-                                    hydrologic and environmental data across western U.S. & Canadian watersheds
-                                </p>
+                  <a
+                    class="button"
+                    href="https://github.com/brandonxu360/utility-watershed-analytics"
+                    style="
+                      display: inline-flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="projects_list.utility.button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
 
-                                <a class="button" href="https://github.com/brandonxu360/utility-watershed-analytics"
-                                    style="display: inline-flex; justify-content: center; align-items: center;"
-                                    target="_blank" rel="noopener noreferrer"
-                                    data-i18n="projects_list.utility.button">Learn
-                                    More</a>
-                            </div>
-                        </div>
+              <div class="project-item">
+                <picture class="project-list-img">
+                  <img src="pictures/pulse-logo.png" alt="Pulse logo" />
+                </picture>
 
-                        <div class="project-item">
-                            <picture class="project-list-img">
-                                <img src="pictures/pulse-logo.png" alt="Pulse logo">
-                            </picture>
+                <div class="project-content">
+                  <h2
+                    class="project-title"
+                    data-i18n="projects_list.pulse.title"
+                  >
+                    Pulse
+                  </h2>
 
-                            <div class="project-content">
-                                <h2 class="project-title" data-i18n="projects_list.pulse.title">Pulse</h2>
+                  <p data-i18n="projects_list.pulse.description">
+                    Pulse is a C# ASP.NET Core MVC application developed to help
+                    the user focus on important goals and tasks in their
+                    upcoming week.
+                  </p>
 
-                                <p data-i18n="projects_list.pulse.description">
-                                    Pulse is a C# ASP.NET Core MVC application developed to help the user focus on
-                                    important goals and tasks in their upcoming week.
-                                </p>
+                  <a
+                    class="button"
+                    href="https://github.com/jakevanhalder/Pulse"
+                    style="
+                      display: inline-flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="projects_list.pulse.button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
 
-                                <a class="button" href="https://github.com/jakevanhalder/Pulse"
-                                    style="display: inline-flex; justify-content: center; align-items: center;"
-                                    target="_blank" rel="noopener noreferrer"
-                                    data-i18n="projects_list.pulse.button">Learn
-                                    More</a>
-                            </div>
-                        </div>
+              <div class="project-item">
+                <picture class="project-list-img">
+                  <img
+                    src="pictures/graph-theorists-sketchpad-logo.png"
+                    alt="Graph Theorist's Sketchpad logo"
+                  />
+                </picture>
 
-                        <div class="project-item">
-                            <picture class="project-list-img">
-                                <img src="pictures/graph-theorists-sketchpad-logo.png"
-                                    alt="Graph Theorist's Sketchpad logo">
-                            </picture>
+                <div class="project-content">
+                  <h2
+                    class="project-title"
+                    data-i18n="projects_list.graph.title"
+                  >
+                    Graph Theorist&apos;s Sketchpad
+                  </h2>
 
-                            <div class="project-content">
-                                <h2 class="project-title" data-i18n="projects_list.graph.title">Graph Theorist&apos;s
-                                    Sketchpad</h2>
+                  <p data-i18n="projects_list.graph.description">
+                    A 3D Three.js interactive tool for creating, visualizing,
+                    and analyzing graphs.
+                  </p>
 
-                                <p data-i18n="projects_list.graph.description">
-                                    A 3D Three.js interactive tool for creating, visualizing, and analyzing graphs.
-                                </p>
+                  <a
+                    class="button"
+                    href="https://github.com/jakevanhalder/graph-theorists-sketchpad"
+                    style="
+                      display: inline-flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="projects_list.graph.button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
 
-                                <a class="button" href="https://github.com/jakevanhalder/graph-theorists-sketchpad"
-                                    style="display: inline-flex; justify-content: center; align-items: center;"
-                                    target="_blank" rel="noopener noreferrer"
-                                    data-i18n="projects_list.graph.button">Learn
-                                    More</a>
-                            </div>
-                        </div>
+              <div class="project-item">
+                <picture class="project-list-img">
+                  <img src="pictures/pfp.png" alt="Portfolio website logo" />
+                </picture>
 
-                        <div class="project-item">
-                            <picture class="project-list-img">
-                                <img src="pictures/pfp.png" alt="Portfolio website logo">
-                            </picture>
+                <div class="project-content">
+                  <h2
+                    class="project-title"
+                    data-i18n="projects_list.portfolio.title"
+                  >
+                    Portfolio
+                  </h2>
 
-                            <div class="project-content">
-                                <h2 class="project-title" data-i18n="projects_list.portfolio.title">Portfolio</h2>
+                  <p data-i18n="projects_list.portfolio.description">
+                    Check out how I made this portfolio using HTML, CSS, and
+                    Javascript!
+                  </p>
 
-                                <p data-i18n="projects_list.portfolio.description">
-                                    Check out how I made this portfolio using HTML, CSS, and Javascript!
-                                </p>
+                  <a
+                    class="button"
+                    href="https://github.com/jakevanhalder/portfolio"
+                    style="
+                      display: inline-flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-i18n="projects_list.portfolio.button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
 
-                                <a class="button" href="https://github.com/jakevanhalder/portfolio"
-                                    style="display: inline-flex; justify-content: center; align-items: center;"
-                                    target="_blank" rel="noopener noreferrer"
-                                    data-i18n="projects_list.portfolio.button">Learn
-                                    More</a>
-                            </div>
-                        </div>
-
-                        <!-- Hopefully finishing this up and having a live link to its website
+              <!-- Hopefully finishing this up and having a live link to its website
                         <div class="project-item">
                             <picture class="project-list-img">
                                 <img src="pictures/Recipe-Tracker-Light.png" alt="Recipe Tracker logo">
@@ -200,11 +307,10 @@
                                     More</a>
                             </div>
                         </div>-->
-                    </div>
-                </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
