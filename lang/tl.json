@@ -24,9 +24,9 @@
     "profile_picture_alt": "Nakaka-animasyong larawan ni Jake van Halder",
     "about": {
         "title": "Tungkol sa Akin",
-        "subtitle_prefix": "Papapasok na ako sa aking huling taon bilang Computer Science major sa Washington State University. Bilang isang SWE Intern sa Schweitzer Engineering Laboratories, nakatuon ako sa pagbuo ng scalable, enterprise-grade software at pagpapabuti ng performance ng system. Gumagawa rin ako ng frontend para sa isang GIS-based na ",
-        "subtitle_link": "analytics ng watershed ",
-        "subtitle_suffix": "web application na nagpapakita ng hydrologic at environmental na datos sa mga watershed sa U.S. at Canada. Kung kailangan mo ng taong sabik matuto, handang mag-innovate, at dedikado sa paghahatid ng resulta, makipag-chat tayo!"
+        "subtitle_prefix": "Nagtapos ako noong Mayo 2026 na may B.S. sa Computer Science mula sa Washington State University. Bilang isang SWE Intern sa Schweitzer Engineering Laboratories, nakatuon ako sa pagbuo ng scalable, enterprise-grade software at pagpapahusay ng performance ng system. Binuo ko rin ang frontend para sa isang GIS-based na ",
+        "subtitle_link": "watershed analytics",
+        "subtitle_suffix": "web application na naglalarawan ng hydrologic at environmental na data sa mga watershed sa Western U.S. at Canada. Kung kailangan mo ng taong sabik matuto, handang mag-innovate, at dedikado sa paghahatid ng resulta, mag-usap tayo!"
     },
     "projects": {
         "title": "Mga Proyekto",
